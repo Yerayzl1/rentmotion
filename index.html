@@ -10,7 +10,7 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body class="m-0 font-roboto bg-gradient-to-b from-orange-500 to-red-900 text-white flex flex-col items-center">
+  <body class="m-0 font-roboto bg-gradient-to-b from-orange-500 via-orange-800 to-red-800 text-white flex flex-col min-h-screen">
     <!-- Navbar -->
     <header class="w-full p-2.5 flex justify-between items-center bg-black">
       <img src="./assets/img/logo_RestMotion.png" alt="Logo" class="h-12">
@@ -23,47 +23,49 @@
         </ul>
       </nav>
     </header>
-
-    <!-- Encabezado de la pàgina -->
-    <section class="text-center my-12">
-      <h1 class="text-4xl tracking-wider text-yellow-400">Conéctate al deporte que amas</h1>
-      <p class="text-lg text-gray-200">Encuentra eventos, entrena y mejora con la comunidad deportiva.</p>
-      <button class="mt-5 py-3 px-6 bg-lime-500 text-black text-lg uppercase">Explora más</button>
-    </section>
-
-    <!-- Servicios -->
-    <section class="w-full py-12 flex justify-around bg-orange-600">
-      <div class="text-center w-1/3">
-        <h3 class="text-2xl text-yellow-400">Entrenamientos</h3>
-        <p class="text-base text-white">Utiliza el equipamiento gratuito de una de nuestras estaciones para entrenar.</p>
-      </div>
-      <div class="text-center w-1/3">
-        <h3 class="text-2xl text-yellow-400">Estaciones</h3>
-        <p class="text-base text-white">Encuentra las estaciones que tienes cerca en el mapa en la app.</p>
-      </div>
-      <div class="text-center w-1/3">
-        <h3 class="text-2xl text-yellow-400">Equipamiento</h3>
-        <p class="text-base text-white">Te ofrecemos más deportes para practicar con el mejor equipo.</p>
-      </div>
-    </section>
-
+  
+    <!-- Contenido principal -->
+    <main class="flex-grow">
+      <section class="text-center my-12">
+        <h1 class="text-4xl tracking-wider text-lime-500 font-bold mb-4">Conéctate al deporte que amas</h1>
+        <p class="text-lg text-gray-200">Encuentra eventos, entrena y mejora con la comunidad deportiva.</p>
+        <button class="mt-5 py-3 px-6 bg-lime-500 text-black text-lg uppercase rounded-full font-bold">Explora más</button>
+      </section>
+  
+      <!-- Servicios -->
+      <section class="w-full py-12 flex justify-around">
+        <div class="text-center w-1/3">
+          <h3 class="text-3xl text-lime-500 font-bold">Entrenamientos</h3>
+          <p class="text-lg text-white mt-3">Utiliza el equipamiento gratuito de una de nuestras estaciones para tener los mejores entrenamientos.</p>
+        </div>
+        <div class="text-center w-1/3">
+          <h3 class="text-3xl text-lime-500 font-bold">Estaciones</h3>
+          <p class="text-lg text-white mt-3">Encuentra las estacionesque tienes cerca en el mapa de la aplicación.</p>
+        </div>
+        <div class="text-center w-1/3">
+          <h3 class="text-3xl text-lime-500 font-bold">Equipamiento</h3>
+          <p class="text-lg text-white mt-3">Tenemos muchos deportes preparados para que disfrutes. En ellos, puedes encontrar: Baloncesto, futbol, pàdel...</p>
+        </div>
+      </section>
+    </main>
+  
     <!-- Footer -->
-    <footer class="py-8 bg-black text-center">
+    <footer class="py-8 text-center w-full">
       <div class="flex justify-center">
         <a href="#" class="flex items-center mx-2.5 text-white">
-          <i class="fa-brands fa-google mr-2"></i>Google
+          <i class="fa-brands fa-google mr-2 text-3xl"></i>Google
         </a>
         <a href="#" class="flex items-center mx-2.5 text-white">
-          <i class="fa-brands fa-github mr-2"></i>Github
+          <i class="fa-brands fa-github mr-2 text-3xl"></i>Github
         </a>
         <a href="#" class="flex items-center mx-2.5 text-white">
-          <i class="fa-brands fa-facebook mr-2"></i>Facebook
+          <i class="fa-brands fa-facebook mr-2 text-3xl"></i>Facebook
         </a>
         <a href="#" class="flex items-center mx-2.5 text-white">
-          <i class="fa-brands fa-twitch mr-2"></i>Twitch
+          <i class="fa-brands fa-twitch mr-2 text-3xl"></i>Twitch
         </a>
       </div>
-      <p class="mt-4 text-sm text-white">© 2024 - Todos los derechos reservados | Políticas de privacidad</p>
+      <p class="mt-4 text-sm text-white">© RentMotion 2024 - Todos los derechos reservados | Políticas de privacidad</p>
     </footer>
   </body>
 </html>
