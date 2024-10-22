@@ -1,71 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Principal - RentMotion</title>
-    <link rel="icon" href="./assets/img/logo_RestMotion.png">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body class="m-0 font-roboto bg-gradient-to-b from-orange-500 via-orange-800 to-red-800 text-white flex flex-col min-h-screen">
-    <!-- Navbar -->
-    <header class="w-full p-2.5 flex justify-between items-center bg-black">
-      <img src="./assets/img/logo_RestMotion.png" alt="Logo" class="h-12">
-      <nav>
-        <ul class="flex list-none">
-          <li class="ml-5"><a href="#home" class="text-white no-underline font-bold">Inicio</a></li>
-          <li class="ml-5"><a href="#about" class="text-white no-underline font-bold">Nosotros</a></li>
-          <li class="ml-5"><a href="#services" class="text-white no-underline font-bold">Servicios</a></li>
-          <li class="ml-5"><a href="#contact" class="text-white no-underline font-bold">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-  
-    <!-- Contenido principal -->
-    <main class="flex-grow">
-      <section class="text-center my-12">
-        <h1 class="text-4xl tracking-wider text-lime-500 font-bold mb-4">Conéctate al deporte que amas</h1>
-        <p class="text-lg text-gray-200">Encuentra eventos, entrena y mejora con la comunidad deportiva.</p>
-        <button class="mt-5 py-3 px-6 bg-lime-500 text-black text-lg uppercase rounded-full font-bold">Explora más</button>
-      </section>
-  
-      <!-- Servicios -->
-      <section class="w-full py-12 flex justify-around">
-        <div class="text-center w-1/3">
-          <h3 class="text-3xl text-lime-500 font-bold">Entrenamientos</h3>
-          <p class="text-lg text-white mt-3">Utiliza el equipamiento gratuito de una de nuestras estaciones para tener los mejores entrenamientos.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Principal - RentMotion</title>
+  <link rel="icon" href="./assets/img/logo_RestMotion.png">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body
+  class="m-0 font-roboto bg-gradient-to-b from-orange-500 via-orange-800 to-red-800 text-white flex flex-col min-h-screen">
+  <!-- Navbar -->
+  <header class="w-full p-2.5 flex justify-between items-center bg-black">
+    <img src="./assets/img/logo_RestMotion.png" alt="Logo" class="h-12">
+    <nav class="flex-1 flex justify-center space-x-8"> <!-- Centered navigation options -->
+      <a href="/inicio" class="hover:text-gray-400">Inicio</a>
+      <div class="relative group">
+        <button class="hover:text-gray-400 flex items-center"> Nosotros
+          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="absolute hidden group-hover:block bg-black text-white mt-1 rounded shadow-lg min-w-max">
+          <!-- Adjusted width -->
+          <a href="/nosotros/sobre-nosotros" class="block px-4 py-2 hover:bg-gray-600">Sobre nosotros</a>
+          <a href="/nosotros/ayuda" class="block px-4 py-2 hover:bg-gray-600">Ayuda</a>
+          <a href="/nosotros/rentmotion-plus" class="block px-4 py-2 hover:bg-gray-600">RentMotion <span
+              class="text-red-500">+</span></a>
         </div>
-        <div class="text-center w-1/3">
-          <h3 class="text-3xl text-lime-500 font-bold">Estaciones</h3>
-          <p class="text-lg text-white mt-3">Encuentra las estacionesque tienes cerca en el mapa de la aplicación.</p>
-        </div>
-        <div class="text-center w-1/3">
-          <h3 class="text-3xl text-lime-500 font-bold">Equipamiento</h3>
-          <p class="text-lg text-white mt-3">Tenemos muchos deportes preparados para que disfrutes. En ellos, puedes encontrar: Baloncesto, futbol, pàdel...</p>
-        </div>
-      </section>
-    </main>
-  
-    <!-- Footer -->
-    <footer class="py-8 text-center w-full">
-      <div class="flex justify-center">
-        <a href="#" class="flex items-center mx-2.5 text-white">
-          <i class="fa-brands fa-google mr-2 text-3xl"></i>Google
-        </a>
-        <a href="#" class="flex items-center mx-2.5 text-white">
-          <i class="fa-brands fa-github mr-2 text-3xl"></i>Github
-        </a>
-        <a href="#" class="flex items-center mx-2.5 text-white">
-          <i class="fa-brands fa-facebook mr-2 text-3xl"></i>Facebook
-        </a>
-        <a href="#" class="flex items-center mx-2.5 text-white">
-          <i class="fa-brands fa-twitch mr-2 text-3xl"></i>Twitch
-        </a>
       </div>
-      <p class="mt-4 text-sm text-white">© RentMotion 2024 - Todos los derechos reservados | Políticas de privacidad</p>
-    </footer>
-  </body>
+      <div class="relative group">
+        <button class="hover:text-gray-400 flex items-center"> Servicios
+          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="absolute hidden group-hover:block bg-black text-white mt-1 rounded shadow-lg min-w-max">
+          <!-- Adjusted width -->
+          <a href="/servicios/ubicaciones" class="block px-4 py-2 hover:bg-gray-600">Ubicaciones</a>
+          <a href="/servicios/equipamiento" class="block px-4 py-2 hover:bg-gray-600">Equipamiento</a>
+          <a href="/servicios/eventos" class="block px-4 py-2 hover:bg-gray-600">Eventos</a>
+        </div>
+      </div>
+      <a href="/contacto" class="hover:text-gray-400">Contacto</a>
+    </nav>
+    <a href="/perfil" class="flex items-center">
+      <i class="fa-solid fa-user"></i>
+    </a>
+  </header>
+
+
+  <!-- Contenido principal -->
+  <main class="flex-grow">
+    <section class="text-center my-12">
+      <h1 class="text-4xl tracking-wider text-lime-500 font-bold mb-4">Conéctate al deporte que amas</h1>
+      <p class="text-lg text-gray-200">Encuentra eventos, entrena y mejora con la comunidad deportiva.</p>
+      <button class="mt-5 py-3 px-6 bg-lime-500 text-black text-lg uppercase rounded-full font-bold">Explora
+        más</button>
+    </section>
+
+    <!-- Servicios -->
+    <section class="w-full py-12 flex justify-around">
+      <div class="text-center w-1/3">
+        <h3 class="text-3xl text-lime-500 font-bold">Entrenamientos</h3>
+        <p class="text-lg text-white mt-3">Utiliza el equipamiento gratuito de una de nuestras estaciones para tener los
+          mejores entrenamientos.</p>
+      </div>
+      <div class="text-center w-1/3">
+        <h3 class="text-3xl text-lime-500 font-bold">Estaciones</h3>
+        <p class="text-lg text-white mt-3">Encuentra las estacionesque tienes cerca en el mapa de la aplicación.</p>
+      </div>
+      <div class="text-center w-1/3">
+        <h3 class="text-3xl text-lime-500 font-bold">Equipamiento</h3>
+        <p class="text-lg text-white mt-3">Tenemos muchos deportes preparados para que disfrutes. En ellos, puedes
+          encontrar: Baloncesto, futbol, pàdel...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center w-full">
+    <div class="flex justify-center">
+      <a href="#" class="flex items-center mx-2.5 text-white">
+        <i class="fa-brands fa-google mr-2 text-3xl"></i>Google
+      </a>
+      <a href="#" class="flex items-center mx-2.5 text-white">
+        <i class="fa-brands fa-github mr-2 text-3xl"></i>Github
+      </a>
+      <a href="#" class="flex items-center mx-2.5 text-white">
+        <i class="fa-brands fa-facebook mr-2 text-3xl"></i>Facebook
+      </a>
+      <a href="#" class="flex items-center mx-2.5 text-white">
+        <i class="fa-brands fa-twitch mr-2 text-3xl"></i>Twitch
+      </a>
+    </div>
+    <p class="mt-4 text-sm text-white">© RentMotion 2024 - Todos los derechos reservados | Políticas de privacidad</p>
+  </footer>
+</body>
+
 </html>
