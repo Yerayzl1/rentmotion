@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Main menu toggle
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -32,4 +33,13 @@ nosotrosToggle.addEventListener('click', () => {
 // mostrar opcions de Servicios pero sense ocultar res i mostrant les opcions a sota del boto
 serviciosToggle.addEventListener('click', () => {
     serviciosMenu.classList.toggle('hidden');
+=======
+import './style.css'
+// Mobile Menu Toggle Script
+const menuButton = document.getElementById('menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+>>>>>>> f6cb5b55b77bd8c6bcc056ad9dc3073cc9db20f1
 });
