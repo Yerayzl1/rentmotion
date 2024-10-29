@@ -8,11 +8,8 @@ module.exports = {
       linkColor: '#00B7FF',
       black: '#000000',
       white: '#FFFFFF',
-<<<<<<< HEAD
       gray: '#4B5563',
       red: '#EF4444',
-=======
->>>>>>> f6cb5b55b77bd8c6bcc056ad9dc3073cc9db20f1
     },
     extend: {
       backgroundImage: {
