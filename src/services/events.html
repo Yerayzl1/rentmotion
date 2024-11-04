@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página principal - RentMotion</title>
-    <link rel="icon" href="./assets/img/logo_RentMotion.png">
+    <title>Eventos - RentMotion</title>
+    <link rel="icon" href="../../assets/img/logo_RentMotion.png">
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../style.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom JS -->
@@ -15,7 +15,7 @@
   <body class="m-0 font-roboto bg-background text-white flex flex-col min-h-screen items-center">
   <!-- Navbar -->
   <header class="w-full p-4 flex justify-between items-center bg-black">
-    <img src="./assets/img/logo_RentMotion.png" alt="Logo" class="h-12 md:h-16">
+    <img src="../../assets/img/logo_RentMotion.png" alt="Logo" class="h-12 md:h-16">
     <!-- Icona del menú hamburguesa per mòbil -->
     <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@
     </button>
     <!-- Menú per ordinador (es mostra només en pantalles md o més grans) -->
     <nav id="menu" class="hidden md:flex flex-1 justify-center space-x-8 items-center">
-      <a href="./index.html" class="hover:text-gray font-bold">INICIO</a>
+      <a href="../../index.html" class="hover:text-gray font-bold">INICIO</a>
       <div class="relative group">
         <button class="hover:text-gray flex items-center font-bold">
           NOSOTROS
@@ -34,9 +34,9 @@
           </svg>
         </button>
         <div class="absolute hidden group-hover:block bg-black text-white mt-1 rounded shadow-lg min-w-max text-center">
-          <a href="./src/about/about-us.html" class="block px-4 py-2 hover:bg-gray font-bold">Sobre nosotros</a>
-          <a href="./src/about/help.html" class="block px-4 py-2 hover:bg-gray font-bold">Ayuda</a>
-          <a href="./src/about/rentmotion-plus.html" class="block px-4 py-2 hover:bg-gray font-bold">RentMotion <span
+          <a href="../about/about-us.html" class="block px-4 py-2 hover:bg-gray font-bold">Sobre nosotros</a>
+          <a href="../about/help.html" class="block px-4 py-2 hover:bg-gray font-bold">Ayuda</a>
+          <a href="../about/rentmotion-plus.html" class="block px-4 py-2 hover:bg-gray font-bold">RentMotion <span
               class="text-red">+</span></a>
         </div>
       </div>
@@ -51,15 +51,15 @@
         </svg>
         </button>
         <div class="absolute hidden group-hover:block bg-black text-white mt-1 rounded shadow-lg min-w-max text-center">
-          <a href="./src/services/ubications.html" class="block px-4 py-2 hover:bg-gray mt-2 mb-2 font-bold">Ubicaciones</a>
-          <a href="./src/services/equipment.html" class="block px-4 py-2 hover:bg-gray mt-2 mb-2 font-bold">Equipamiento</a>
-          <a href="./src/services/events.html" class="block px-4 py-2 hover:bg-gray mt-2 mb-2 font-bold">Eventos</a>
+          <a href="./ubications.html" class="block px-4 py-2 hover:bg-gray mt-2 mb-2 font-bold">Ubicaciones</a>
+          <a href="./equipment.html" class="block px-4 py-2 hover:bg-gray mt-2 mb-2 font-bold">Equipamiento</a>
+          <a href="./events.html" class="block px-4 py-2 hover:bg-gray mt-2 mb-2 font-bold">Eventos</a>
         </div>
       </div>
-      <a href="./src/contact.html" class="hover:text-gray mt-2 mb-2 font-bold">CONTACTO</a>
+      <a href="../contact.html" class="hover:text-gray mt-2 mb-2 font-bold">CONTACTO</a>
     </nav>
     <!-- Icona de perfil d'usuari (es mostra només en pantalles md o més grans) -->
-    <a href="./src/register.html" class="hidden md:flex items-center mt-2 mb-2">
+    <a href="../register.html" class="hidden md:flex items-center mt-2 mb-2">
       <i class="fa-solid fa-user text-white"></i>
     </a>
   </header>
@@ -67,9 +67,9 @@
   <!-- Menú a pantalla completa per mòbil -->
   <div id="mobile-menu"
     class="fixed inset-0 bg-black items-center justify-start pt-16 text-white space-y-6 hidden flex-grow">
-    <img src="./assets/img/logo_RentMotion.png" alt="Logo" class="h-16 mb-6 mx-auto mt-1">
+    <img src="../../assets/img/logo_RentMotion.png" alt="Logo" class="h-16 mb-6 mx-auto mt-1">
     <!-- Menú mòbil, cada opció una sota l'altra -->
-    <a href="./index.html" class="text-xl block hover:text-gray text-center font-bold mt-12 mb-12">INICIO</a>
+    <a href="../../index.html" class="text-xl block hover:text-gray text-center font-bold mt-12 mb-12">INICIO</a>
 
     <div class="text-center mt-12 mb-12" id="nosotros-div">
       <button id="nosotros-toggle"
@@ -79,9 +79,9 @@
         <i class="fa-solid fa-chevron-down ml-2"></i>
       </button>
       <div id="nosotros-menu" class="hidden flex flex-col items-center space-y-4 mt-2">
-        <a href="./src/about/about-us.html" class="text-lg text-white block hover:text-gray font-bold mt-2 mb-2">Sobre nosotros</a>
-        <a href="./src/about/help.html" class="text-lg block hover:text-gray font-bold mt-2 mb-2">Ayuda</a>
-        <a href="./src/about/rentmotion-plus.html" class="text-lg block hover:text-gray font-bold mt-2 mb-2">RentMotion
+        <a href="../about/about-us.html" class="text-lg text-white block hover:text-gray font-bold mt-2 mb-2">Sobre nosotros</a>
+        <a href="../about/help.html" class="text-lg block hover:text-gray font-bold mt-2 mb-2">Ayuda</a>
+        <a href="../about/rentmotion-plus.html" class="text-lg block hover:text-gray font-bold mt-2 mb-2">RentMotion
           <span class="text-red">+</span></a>
       </div>
     </div>
@@ -93,62 +93,61 @@
           <i class="fa-solid fa-chevron-down ml-2"></i>
       </button>
       <div id="servicios-menu" class="hidden flex flex-col items-center space-y-4 mt-2">
-        <a href="./src/services/ubications.html" class="text-lg block hover:text-gray font-bold">Ubicaciones</a>
-        <a href="./src/services/equipment.html" class="text-lg block hover:text-gray font-bold">Equipamiento</a>
-        <a href="./src/services/events.html" class="text-lg block hover:text-gray font-bold">Eventos</a>
+        <a href="./ubications.html" class="text-lg block hover:text-gray font-bold">Ubicaciones</a>
+        <a href="./equipment.html" class="text-lg block hover:text-gray font-bold">Equipamiento</a>
+        <a href="./events.html" class="text-lg block hover:text-gray font-bold">Eventos</a>
       </div>
     </div>
-    <a href="./src/contact.html" class="text-xl block hover:text-gray text-center font-bold">CONTACTO</a>
+    <a href="../contact.html" class="text-xl block hover:text-gray text-center font-bold">CONTACTO</a>
     <!-- Opcions de Login, Sign Up i Sortida -->
     <div class="flex justify-around w-full mt-8">
-      <a href="./src/login.html" class="hover:text-gray font-bold">LOGIN</a>
+      <a href="../login.html" class="hover:text-gray font-bold">LOGIN</a>
       <button id="close-menu" class="text-red text-3xl">X</button>
-      <a href="./src/register.html" class="hover:text-gray font-bold">REGISTER</a>
+      <a href="../register.html" class="hover:text-gray font-bold">REGISTER</a>
     </div>
   </div>
   <!-- JavaScript -->
-  <script src="./main.js"></script>
+  <script src="../../main.js"></script>
     <!-- Contenido principal -->
     <main class="flex-grow px-4 sm:px-6 md:px-8"> 
       <section class="text-center my-12 sm:my-16">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl tracking-wider text-terciaryColor font-bold mb-4">Conéctate al deporte que amas</h1>
-        <p class="text-base sm:text-lg md:text-xl text-white">Encuentra eventos, entrena y mejora con la comunidad deportiva.</p>
-        <button class="mt-5 py-3 px-6 bg-terciaryColor text-black text-lg uppercase rounded-full font-bold">Explora más</button>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl tracking-wider text-terciaryColor font-bold mb-4">Eventos deportivos destacados</h1>
+        <p class="text-base sm:text-lg md:text-xl text-white">Descubre los eventos deportivos más emocionantes y únete a la acción. </p>
+        <p class="text-base sm:text-lg md:text-xl text-white">Aquí encontrarás información sobre los próximos eventos deportivos que no te puedes perder.</p>
       </section>
 
-      <!-- Servicios -->
-      <section class="w-full py-12 sm:py-16 flex flex-col sm:flex-row justify-around items-center space-y-8 sm:space-y-10">
-        <div class="text-center w-full sm:w-1/3 px-4">
-          <h3 class="text-2xl sm:text-3xl md:text-4xl text-terciaryColor font-bold">Entrenamientos</h3>
-          <p class="text-base sm:text-lg md:text-xl text-white mt-3">Utiliza el equipamiento gratuito de una de nuestras estaciones para tener los mejores entrenamientos.</p>
+      <!-- Servicios como tarjetas -->
+      <section class="w-full py-6 sm:py-8 flex flex-col items-center space-y-8">
+        <div class="flex flex-col sm:flex-row sm:space-x-12 w-full justify-center">
+            <div class="bg-secondaryColor text-center w-full sm:w-1/3 h-64 px-4 py-6 rounded-lg flex flex-col items-center shadow-lg">
+              <h3 class="text-xl sm:text-2xl md:text-3xl text-white font-bold">Matxos Torelló</h3>
+              <p class="text-sm sm:text-base md:text-lg text-white mt-3">Fecha: 16 de noviembre de 2024</p>
+              <p class="text-sm sm:text-base md:text-lg text-white mt-3">Ubicación: Torelló, Barcelona</p>
+              <p class="text-sm sm:text-base md:text-lg text-white mt-3">Descripción: Únete a este conocido evento de una de las maratones más importantes de Cataluña.</p>
+            </div>
+            <div class="bg-secondaryColor text-center w-full sm:w-1/3 h-64 px-4 py-6 rounded-lg flex flex-col items-center shadow-lg">
+              <h3 class="text-xl sm:text-2xl md:text-3xl text-white font-bold">Torneo de fútbol</h3>
+              <p class="text-sm sm:text-base md:text-lg text-white mt-3">Fecha: 10 de diciembre de 2024</p>
+              <p class="text-sm sm:text-base md:text-lg text-white mt-3">Ubicación: Vic, Barcelona</p>
+              <p class="text-sm sm:text-base md:text-lg text-white mt-3">Descripción: Participa en este emocionante torneo de fútbol donde equipos de toda Cataluña competirán por el título.</p>
+            </div>
         </div>
-        <div class="text-center w-full sm:w-1/3 px-4">
-          <h3 class="text-2xl sm:text-3xl md:text-4xl text-terciaryColor font-bold">Estaciones</h3>
-          <p class="text-base sm:text-lg md:text-xl text-white mt-3">Encuentra las estaciones que tienes cerca en el mapa de la aplicación.</p>
-        </div>
-        <div class="text-center w-full sm:w-1/3 px-4">
-          <h3 class="text-2xl sm:text-3xl md:text-4xl text-terciaryColor font-bold">Equipamiento</h3>
-          <p class="text-base sm:text-lg md:text-xl text-white mt-3">Tenemos muchos deportes preparados para que disfrutes. En ellos, puedes encontrar: Baloncesto, fútbol, pádel...</p>
+        <div class="bg-secondaryColor text-center w-full sm:w-1/3 h-64 px-4 py-6 rounded-lg flex flex-col items-center shadow-lg">
+          <h3 class="text-xl sm:text-2xl md:text-3xl text-white font-bold">Nike Running</h3>
+          <p class="text-sm sm:text-base md:text-lg text-white mt-3">Fecha: 25 de enero de 2025</p>
+          <p class="text-sm sm:text-base md:text-lg text-white mt-3">Ubicación: Barcelona</p>
+          <p class="text-sm sm:text-base md:text-lg text-white mt-3">Descripción: Desafía tus límites en este maratón organizado por Nike en el bonito distrito de Barcelona.</p>
         </div>
       </section>
     </main>
 
-    <!-- Descarga la aplicación -->
-    <section class="block sm:block md:hidden py-8 text-center w-full mt-4 sm:mt-8">
-      <h2 class="text-white text-2xl sm:text-3xl font-bold mb-4">Descarga la aplicación</h2>
-      <a href="./src/downloadPage.html" class="px-8 py-2 bg-terciaryColor text-black font-bold uppercase rounded-full mb-4">Más información</a>
-      <div class="flex justify-center space-x-4">
-        <a href="./src/downloadPage.html" class="block"><img src="./assets/img/downloadImage.png" alt="Download on the App Store" class="h-12 bg-white rounded-2xl"></a>
-      </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="hidden sm:block py-8 text-center w-full ">
+    <footer class="hidden sm:block py-8 text-center w-full">
       <div class="flex justify-center">
         <a href="https://www.google.com" class="flex items-center mx-2.5 text-white">
           <i class="fa-brands fa-google mr-2 text-3xl"></i>Google
         </a>
-        <a href="https://www.github.com" class="flex items-center mx-2.5 text-white">
+        <a href="https://github.com" class="flex items-center mx-2.5 text-white">
           <i class="fa-brands fa-github mr-2 text-3xl"></i>Github
         </a>
         <a href="https://www.facebook.com" class="flex items-center mx-2.5 text-white">
@@ -165,7 +164,7 @@
     <footer class="block md:hidden py-8 text-center w-full">
       <div class="flex justify-center space-x-4">
         <a href="https://www.google.com"><i class="fa-brands fa-google mr-2 text-3xl"></i></a>
-        <a href="https://www.github.com"><i class="fa-brands fa-github mr-2 text-3xl"></i></a>
+        <a href="https://github.com"><i class="fa-brands fa-github mr-2 text-3xl"></i></a>
         <a href="https://www.facebook.com"><i class="fa-brands fa-facebook mr-2 text-3xl"></i></a>
         <a href="https://www.twitch.tv"><i class="fa-brands fa-twitch mr-2 text-3xl"></i></a>
       </div>

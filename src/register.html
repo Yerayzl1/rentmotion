@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - RentMotion</title>
+    <link rel="icon" href="../assets/img/logo_RentMotion.png">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom JS -->
+  </head>
+
+  <body class="m-0 font-roboto bg-background text-white flex flex-col min-h-screen  items-center">
+    <!-- Contenido principal -->
+    <div class="w-full max-w-xs p-6 rounded-lg  text-center text-black">
+      <h2 class="text-4xl font-bold mb-6 text-black">REG<i class="fa-solid fa-location-dot"></i>STRO</h2>
+      <form class="space-y-6">
+        <input type="text" placeholder="Nombre de usuario" class="w-full p-3 border border-gray rounded-md">
+        <input type="email" placeholder="Correo electrónico" class="w-full p-3 border border-gray rounded-md">
+        <input type="tel" placeholder="Número de teléfono" class="w-full p-3 border border-gray rounded-md">
+        <input type="password" placeholder="Contraseña" class="w-full p-3 border border-gray rounded-md">
+        <button type="submit" class="w-full py-2 mt-6 bg-terciaryColor text-black font-bold rounded-md hover:bg-terciaryColor" value="./login.html">Crear cuenta</button>
+      </form>
+    </div>
+
+    <!-- Línea divisoria -->
+    <div class="hidden sm:block text-center w-full">
+      <div class="flex items-center justify-center my-8">
+        <span class="mx-4 text-terciaryColor font-bold">--------------------------------------------------------------------------------------------------------</span>
+        <span class="mx-4 text-terciaryColor font-bold">O</span>
+        <span class="mx-4 text-terciaryColor font-bold">--------------------------------------------------------------------------------------------------------</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="hidden sm:block py-8 text-center w-full ">
+      <div class="flex justify-center">
+        <a href="https://www.google.com" class="flex items-center mx-2.5 text-white">
+          <i class="fa-brands fa-google mr-2 text-3xl"></i>Google
+        </a>
+        <a href="https://github.com" class="flex items-center mx-2.5 text-white">
+          <i class="fa-brands fa-github mr-2 text-3xl"></i>Github
+        </a>
+        <a href="https://www.facebook.com" class="flex items-center mx-2.5 text-white">
+          <i class="fa-brands fa-facebook mr-2 text-3xl"></i>Facebook
+        </a>
+        <a href="https://www.twitch.tv" class="flex items-center mx-2.5 text-white">
+          <i class="fa-brands fa-twitch mr-2 text-3xl"></i>Twitch
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-terciaryColor font-bold">¿Ya tienes una cuenta creada? <a href="./login.html" class="text-blue hover:underline">Iniciar sesión</a></p>
+      <br>
+      <p class="mt-4 text-sm text-white">© RentMotion 2024 - Todos los derechos reservados | Políticas de privacidad</p>
+    </footer>
+
+    <!-- Línea divisoria (sm:) -->
+    <div class="block md:hidden text-center w-full">
+      <div class="flex items-center justify-center my-8">
+        <span class="mx-4 text-terciaryColor font-bold">-------------------------</span>
+        <span class="mx-4 text-terciaryColor font-bold">O</span>
+        <span class="mx-4 text-terciaryColor font-bold">------------------------</span>
+      </div>
+    </div>
+
+    <!-- Footer mobile (sm:) -->
+    <footer class="block md:hidden py-8 text-center w-full">
+      <div class="flex justify-center space-x-4">
+        <a href="https://www.google.com"><i class="fa-brands fa-google mr-2 text-3xl"></i></a>
+        <a href="https://github.com"><i class="fa-brands fa-github mr-2 text-3xl"></i></a>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook mr-2 text-3xl"></i></a>
+        <a href="https://www.twitch.tv"><i class="fa-brands fa-twitch mr-2 text-3xl"></i></a>
+      </div>
+      <p class="mt-6 text-sm text-terciaryColor font-bold">¿Ya tienes una cuenta creada? <a href="./login.html" class="text-blue hover:underline">Iniciar sesión</a></p>
+      <br>
+      <p class="mt-4 text-sm text-white">© RentMotion 2024 - Todos los derechos reservados  Políticas de privacidad</p>
+    </footer>
+  </body>
+
+</html>

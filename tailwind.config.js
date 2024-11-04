@@ -1,5 +1,8 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts}"],
+  content: [
+    "./index.html", 
+    "./src/**/*.{html,js,ts}"
+  ],
   theme: {
     colors: {
       mainColor: '#FF0000',
@@ -10,6 +13,8 @@ module.exports = {
       white: '#FFFFFF',
       gray: '#4B5563',
       red: '#EF4444',
+      blue: '#030BFC',
+      orange: '#FF6600',
     },
     extend: {
       backgroundImage: {
