@@ -19,7 +19,7 @@ export default defineConfig({
         equipment: path.resolve(__dirname, "src/services/equipment.html"),
         events: path.resolve(__dirname, "src/services/events.html"),
         ubications: path.resolve(__dirname, "src/services/ubications.html"),
-        mainJS: path.resolve(__dirname, "src/main.js"),
+        mainJS: path.resolve(__dirname, "main.js"),
         mapJs: path.resolve(__dirname, "assets/js/map.js"),
       },
     },
