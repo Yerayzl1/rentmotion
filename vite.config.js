@@ -18,7 +18,7 @@ export default defineConfig({
         ),
         download: path.resolve(
           __dirname,
-          "src/download.html"
+          "src/downloadPage.html"
         ),
         login: path.resolve(
           __dirname,
